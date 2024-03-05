@@ -13,9 +13,11 @@ public class Graph {
             generator="yourSequenceGenerator")
     private Long id;
 
-    @Column(name = "nr_of_vertices", nullable = false)
+    @Column(name = "nr_of_vertices", length = 50, nullable = false, unique = false)
     private int nrOfVertices;
 
+    @Enumerated(EnumType.STRING)
+    private GraphType graphType;
 
     public void setId(Long id) {
         this.id = id;
@@ -31,5 +33,13 @@ public class Graph {
 
     public void setNrOfVertices(int nrOfVertices) {
         this.nrOfVertices = nrOfVertices;
+    }
+
+    public GraphType getGraphType() {
+        return graphType;
+    }
+
+    public void setGraphType(GraphType graphType) {
+        this.graphType = graphType;
     }
 }

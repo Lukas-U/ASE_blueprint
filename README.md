@@ -6,3 +6,10 @@ _This is a Blueprint for the ASE Introductory Test created using the following S
 Remember to check the following:
 - Run Maven before starting the Application
 - If the maven window is not visible, right click on pom.xml and select "add as maven project"
+
+### Spring Dependencies used
+- Spring Boot DevTools (LiveReload)
+- Spring Web
+- Rest Repositories
+- Spring Data JPA
+- PostgreSQL Driver
