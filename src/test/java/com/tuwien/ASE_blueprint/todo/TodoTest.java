@@ -1,5 +1,6 @@
 package com.tuwien.ASE_blueprint.todo;
 
+import com.tuwien.ASE_blueprint.model.todo.Todo;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

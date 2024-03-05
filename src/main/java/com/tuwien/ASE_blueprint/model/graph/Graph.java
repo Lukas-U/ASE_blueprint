@@ -1,4 +1,4 @@
-package com.tuwien.ASE_blueprint.model;
+package com.tuwien.ASE_blueprint.model.graph;
 
 
 import jakarta.persistence.*;

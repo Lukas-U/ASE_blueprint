@@ -1,4 +1,4 @@
-package com.tuwien.ASE_blueprint.todo;
+package com.tuwien.ASE_blueprint.model.todo;
 
 public class Todo {
 

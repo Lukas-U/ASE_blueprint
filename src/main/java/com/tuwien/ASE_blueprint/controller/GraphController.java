@@ -1,7 +1,7 @@
 package com.tuwien.ASE_blueprint.controller;
 
-import com.tuwien.ASE_blueprint.model.Graph;
-import com.tuwien.ASE_blueprint.model.GraphType;
+import com.tuwien.ASE_blueprint.model.graph.Graph;
+import com.tuwien.ASE_blueprint.model.graph.GraphType;
 import com.tuwien.ASE_blueprint.repository.GraphRepository;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
