@@ -1,10 +1,10 @@
 package com.tuwien.ASE_blueprint.controller;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.tuwien.ASE_blueprint.model.hyperloop.Assignment1;
-import com.tuwien.ASE_blueprint.model.hyperloop.Assignment2;
-import com.tuwien.ASE_blueprint.model.hyperloop.Assignment3;
-import com.tuwien.ASE_blueprint.model.hyperloop.Assignment4;
+import com.tuwien.ASE_blueprint.model.hyperloop.Ass1;
+import com.tuwien.ASE_blueprint.model.hyperloop.Ass2;
+import com.tuwien.ASE_blueprint.model.hyperloop.Ass3;
+import com.tuwien.ASE_blueprint.model.hyperloop.Ass4;
 import com.tuwien.ASE_blueprint.service.HyperloopService;
 import com.tuwien.ASE_blueprint.model.Point;
 import lombok.extern.slf4j.Slf4j;
@@ -29,25 +29,25 @@ public class HyperloopController {
     }
 
     @PostMapping(BASE_URL + "1")
-    public List<Point> generateSolution1(@RequestBody Assignment1 assignment1) {
+    public List<Point> generateSolution1(@RequestBody Ass1 assignment1) {
         log.info(POST_USING_BODY, BASE_URL + "1", assignment1.toString());
         return hyperloopService.generateSolution1(assignment1);
     }
 
     @PostMapping(BASE_URL + "2")
-    public List<Point> generateSolution2(@RequestBody Assignment2 assignment2) {
+    public List<Point> generateSolution2(@RequestBody Ass2 assignment2) {
         log.info(POST_USING_BODY, BASE_URL + "2", assignment2.toString());
         return hyperloopService.generateSolution2(assignment2);
     }
 
     @PostMapping(BASE_URL + "3")
-    public List<Point> generateSolution3(@RequestBody Assignment3 assignment3) {
+    public List<Point> generateSolution3(@RequestBody Ass3 assignment3) {
         log.info(POST_USING_BODY, BASE_URL + "3", assignment3.toString());
         return hyperloopService.generateSolution3(assignment3);
     }
 
     @PostMapping(BASE_URL + "4")
-    public List<Point> generateSolution4(@RequestBody Assignment4 assignment4) {
+    public List<Point> generateSolution4(@RequestBody Ass4 assignment4) {
         log.info(POST_USING_BODY, BASE_URL + "4", assignment4.toString());
         return hyperloopService.generateSolution4(assignment4);
     }

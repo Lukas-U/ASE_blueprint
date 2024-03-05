@@ -38,12 +38,14 @@ public class HyperloopService {
             }
             """;
 
+    // TODO what do we actually persist after solving the problems?
+    // TODO does this data model work for incremental updates to the required solutions?
     public HyperloopService(CoordinateSystemRepository coordinateSystemRepository, PointRepository pointRepository) {
         this.coordinateSystemRepository = coordinateSystemRepository;
         this.pointRepository = pointRepository;
     }
 
-    public List<Point> generateSolution1(Assignment1 assignment1) {
+    public List<Point> generateSolution1(Ass1 assignment1) {
         List<Point> result = new ArrayList<>();
         StringBuilder stringBuilder = new StringBuilder();
         assignment1.getPoints().forEach((Point point) -> {
@@ -65,7 +67,7 @@ public class HyperloopService {
     }
 
     // TODO this does not incorporate Solution 1
-    public List<Point> generateSolution2(Assignment2 assignment2) {
+    public List<Point> generateSolution2(Ass2 assignment2) {
         List<Point> result = new ArrayList<>();
         StringBuilder stringBuilder = new StringBuilder();
 
@@ -104,7 +106,7 @@ public class HyperloopService {
     }
 
     // TODO this solves it for a single obstacle but not for lines
-    public List<Point> generateSolution3(Assignment3 assignment3) {
+    public List<Point> generateSolution3(Ass3 assignment3) {
         List<Point> result = new ArrayList<>();
         StringBuilder stringBuilder = new StringBuilder();
 
@@ -140,7 +142,7 @@ public class HyperloopService {
     }
 
     // TODO this solves it for a list of obstacles but not for lines
-    public List<Point> generateSolution4(Assignment4 assignment4) {
+    public List<Point> generateSolution4(Ass4 assignment4) {
         List<Point> result = new ArrayList<>();
         StringBuilder stringBuilder = new StringBuilder();
 

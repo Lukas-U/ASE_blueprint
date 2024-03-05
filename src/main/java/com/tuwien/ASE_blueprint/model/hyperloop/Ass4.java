@@ -7,7 +7,7 @@ import lombok.Data;
 import java.util.List;
 
 @Data
-public class Assignment4 {
+public class Ass4 {
     private List<Obstacle> obstacles;
     private List<Point> points;
 }
